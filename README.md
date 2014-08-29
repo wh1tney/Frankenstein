@@ -45,3 +45,43 @@ Because there are multiple "votable" models &mdash; questions, answers, and resp
 Likewise, a `Response` can belong to either an `Answer` or a `Question`.
 
 That is, instead of the "type" being encoded in the table name, it's encoded as a field in the table.
+
+### Teams
+
+
+#### Eric Kennedy
+
+Gunnari Auvinen  
+Matthew Chan  
+Danielle Sublett  
+PATRICK MENZEL  
+Ian Bui  
+
+#### Katia Bazzi
+
+Chandler HC Smith  
+Vladislav Abacumov  
+Yohan Yi  
+Phillip Crawford  
+
+#### Ori Jonathan Pleban
+
+Brooks Roley  
+Patrick Lauer  
+Melissa McCoy  
+Antonio Dangond  
+
+#### Frank Shaw
+
+Alex Birdsall  
+Hethe Berg  
+Cassidy Clawson  
+Tommy Dugger  
+_Nina Church_
+
+#### Igor Gaelzer
+
+Whitney O'Banner  
+Xang Thao  
+Evan Simoni  
+Lauren Kroner  
