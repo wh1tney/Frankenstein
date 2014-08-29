@@ -1,3 +1,7 @@
+<div>
+  <h1>Welcome to Frankenstein Overflow!</h1>
+</div>
+
 <%  @questions.each do |question| %>
   <div>
     <h3><span><!-- Vote total Goes here --></span><%= link_to question.title, question_path(question) %></h3>
