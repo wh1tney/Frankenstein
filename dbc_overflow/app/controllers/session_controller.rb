@@ -7,6 +7,10 @@ class SessionController < ApplicationController
     end
   end
 
+  def validate_credentials
+
+  end
+
   def logout
 
   end
