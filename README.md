@@ -92,7 +92,7 @@ Lauren Kroner
 You will finish the project started by another team.  You may change their
 design decisions, but you must do so in a series of clear, focused commits.
 
-You should not change the topic of the project.  Don't throw away their code,
+You should not change the topic of the project.  Don't throw away their code;
 build on it, change it, see where they were going, and deliver a kick-ass app
 built on someone else's code.
 
