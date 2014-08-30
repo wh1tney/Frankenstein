@@ -12,4 +12,7 @@ Rails.application.routes.draw do
   post '/questions', to: 'questions#create'
   get '/questions/:id', to: 'questions#show'
 
+  get '/answers', to: 'answers#index'
+  get '/answers/new', to: 'answers#new'
+  post '/answers', to: 'answers#create'
 end
