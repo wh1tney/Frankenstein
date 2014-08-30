@@ -11,13 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140830131730) do
+ActiveRecord::Schema.define(version: 20140830140530) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "answers", force: true do |t|
-    t.string   "content"
+    t.string   "content",     null: false
     t.integer  "user_id"
     t.integer  "question_id"
     t.datetime "created_at"
@@ -26,16 +26,17 @@ ActiveRecord::Schema.define(version: 20140830131730) do
   end
 
   create_table "questions", force: true do |t|
-    t.string   "title"
-    t.string   "content"
+    t.string   "title",          limit: 30, null: false
+    t.string   "content",                   null: false
     t.integer  "user_id"
     t.integer  "best_answer_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "score"
   end
 
   create_table "responses", force: true do |t|
-    t.string   "content"
+    t.string   "content",          null: false
     t.integer  "user_id"
     t.string   "response_to_type"
     t.integer  "response_to_id"
@@ -44,10 +45,11 @@ ActiveRecord::Schema.define(version: 20140830131730) do
   end
 
   create_table "users", force: true do |t|
-    t.string   "email"
-    t.string   "password_hash"
+    t.string   "email",         limit: 30, null: false
+    t.string   "password_hash", limit: 30
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "username"
   end
 
   create_table "votes", force: true do |t|
