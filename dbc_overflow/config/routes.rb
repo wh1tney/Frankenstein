@@ -7,4 +7,9 @@ Rails.application.routes.draw do
   get '/users/new', to: 'users#new'
   post '/users', to: 'users#create'
   
+  get '/questions', to: 'questions#index'
+  get '/questions', to: 'questions#new'
+  post '/questions', to: 'questions#create'
+  get '/questions/:id', to: 'questions#show'
+
 end
