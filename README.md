@@ -89,6 +89,21 @@ Lauren Kroner
 
 ## Updated Starting Point
 
+You will finish the project started by another team.  You may change their
+design decisions, but you must do so in a series of clear, focused commits.
+
+You should not change the topic of the project.  Don't throw away their code,
+build on it, change it, see where they were going, and deliver a kick-ass app
+built on someone else's code.
+
+You may only take commits off of their master branch.  This is a lesson.
+What's in master is the only thing that counts.
+
+You may feel the sting of them not testing their app.  Yes.
+
+You may feel angry at having your code ripped from your hard-working fingers.
+Yes.
+
     [
      ["Ori", "lkroner/snack-overflow: fd934abcfdf2ead1b6506996a66cc569e446c9b4"],
      ["Igor", "mule-deer-2014/overflow-challenge: e7790a31226556380d3698e47cdd167e3edde591"],
