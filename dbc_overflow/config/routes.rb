@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get '/sessions/login', to: 'sessions#login', as: 'login'
   post '/sessions', to: 'sessions#validate_credentials'
 
-  get '/users/new', to: 'user#new', as: 'user_new'
-  post '/users', to: 'user#create'
+  get '/users/new', to: 'users#new', as: 'user_new'
+  post '/users', to: 'users#create'
   
 end
