@@ -1,4 +1,6 @@
 class Response < ActiveRecord::Base
+  validates	:content, presence: true
+
   belongs_to :user
   belongs_to :response_to, :polymorphic => true
   has_many :votes, as: :vote_for
