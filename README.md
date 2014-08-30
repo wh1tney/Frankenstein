@@ -1,18 +1,15 @@
-Team: ?
+### Team 
+**Igor Gaelzer**
+Lauren Kroner
+Evan Simoni
+Zhang Thao
+Whitney O'Banner
 
-#### Frank Shaw
-
-Alex Birdsall
-Hethe Berg
-Cassidy Clawson
-Tommy Dugger
-_Nina Church_
-
-### MVP
+### MVP (inherited from Frank Shaw's team)
 Login/Signout
-Create Questions
-Post Answers / Responses
-User's can upvote
+~~Create Questions~~
+~~Post Answers / Responses~~
+~~User's can upvote~~
 
 ### Stretch Goals
 Author can select best answer
