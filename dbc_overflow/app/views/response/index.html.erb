@@ -1,0 +1,6 @@
+<h2>Responses to <%= @responses.first.owner %></h2>
+<ul>
+  <% @responses.each do |response| %>
+    <li><%= render "response", locals: {response: response} %></li>
+  <% end %>
+</ul>
