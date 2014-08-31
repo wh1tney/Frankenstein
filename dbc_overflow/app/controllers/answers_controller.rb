@@ -5,7 +5,7 @@ class AnswersController < ActionController::Base
   end
 
   def new
-    answer = Answer.new
+    @answer = Answer.new
   end
 
   def create
