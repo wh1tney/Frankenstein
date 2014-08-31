@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   root to: 'application#index'
 
-  get '/sessions/login', to: 'sessions#login', as: 'login'
-  post '/sessions', to: 'sessions#validate_credentials'
+  get '/session/login', to: 'session#login', as: 'login'
+  post '/session', to: 'session#validate_credentials'
+  delete '/session', to: 'session#logout'
 
   get '/users/new', to: 'users#new'
   post '/users', to: 'users#create'
