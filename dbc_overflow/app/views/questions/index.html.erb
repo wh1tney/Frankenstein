@@ -1,13 +1,13 @@
 <div>
-  <h2><%= @question.title %></h2>
-  <h6>Question Score</h6>
-  <h6><%= @user.email %></h6>
+  <h2>Question: <%= @question.title %></h2>
+  <h6>Score: <%= @question.score %> </h6>
+  <h6>Asker: <%= @user.email %></h6>
   <p><%= @question.content %></p>
-  <= link_to new_answers_path, remote: true do >
+  < link_to new_answers_path, remote: true do %>
     <button>Add answer!</button>
-  < end >
+  < end %>
   <div>
-    <h6>Response author/user</h6>
+    <h6>Response author/user <%= @question.responses %></h6>
     <p>response content response content response content....</p>
   </div>
   <div>
