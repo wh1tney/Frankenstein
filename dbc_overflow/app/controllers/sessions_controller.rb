@@ -14,25 +14,11 @@ class SessionsController < ApplicationController
     if user && user_password == params[:password]
       session[:user_id] = user.id
       redirect_to root_path
-      puts "AUTHENTICATED!!!"
     else
       flash.now.alert = "Invalid email or password"
       render :login
-      puts "NOT AUTHENTICATED!!!"
     end
-
-    puts ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
-    p user.email
-    p params[:password]
-    p user && BCrypt::Password.new(user.password_hash) == params[:password]
-    p user.password_hash
-    p BCrypt::Password.new(user.password_hash)
-    puts ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
-
   end
-
-
-
 
   def logout
     session[:user_id] = nil
