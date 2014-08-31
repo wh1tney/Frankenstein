@@ -1,5 +1,5 @@
 <div>
-  <%= form_tag do %>
+  <%= form_for :session, url: session_path do %>
     <%= label_tag :email, "Email" %>
     <%= text_field_tag :email %>
     <br>
