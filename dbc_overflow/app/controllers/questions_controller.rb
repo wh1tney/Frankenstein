@@ -15,5 +15,4 @@ class QuestionsController < ApplicationController
     @user = User.find(@question.user_id)
     render :index
   end
-
 end

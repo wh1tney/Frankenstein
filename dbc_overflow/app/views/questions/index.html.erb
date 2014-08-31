@@ -3,14 +3,21 @@
   <h6>Question Score</h6>
   <h6><%= @user.email %></h6>
   <p><%= @question.content %></p>
-  <= link_to new_answers_path, remote: true do >
+  <%= link_to answers_new_path, remote: true do %>
     <button>Add answer!</button>
-  < end >
+  <% end %>
   <div>
     <h6>Response author/user</h6>
     <p>response content response content response content....</p>
   </div>
   <div>
+  <div id="answer-form" style="display:none;">
+    <%= form_tag answers_path(:id => @question.id), remote: true do |f| %>
+      <%= label_tag "Your Answer" %>
+      <%= text_field_tag :content %>
+      <%= submit_tag "Submit" %>
+    <% end %>
+  </div>
     <ul class="ul_answers">
       <li>
         <p> @answer.content </p>
