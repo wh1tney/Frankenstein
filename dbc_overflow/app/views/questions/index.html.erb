@@ -1,0 +1,26 @@
+<div>
+  <h2><%= @question.title %></h2>
+  <h6>Question Score</h6>
+  <h6><%= @user.email %></h6>
+  <p><%= @question.content %></p>
+  <= link_to new_answers_path, remote: true do >
+    <button>Add answer!</button>
+  < end >
+  <div>
+    <h6>Response author/user</h6>
+    <p>response content response content response content....</p>
+  </div>
+  <div>
+    <ul class="ul_answers">
+      <li>
+        <p> @answer.content </p>
+        <h6>Answer author/user</h6>
+        <h6>Answer Score</h6>
+        <div>
+          <p>response content response content response content</p>
+          <h6>Response author/user</h6>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
