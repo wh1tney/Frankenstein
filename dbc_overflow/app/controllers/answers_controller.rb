@@ -9,7 +9,9 @@ class AnswersController < ActionController::Base
   end
 
   def create
-    answer = Answer.create(answer_params)
+    question = Question.find(params[:id])
+    @answer = Answer.create(content: params[:content])
+    question.answers << @answer
   end
 
   private
