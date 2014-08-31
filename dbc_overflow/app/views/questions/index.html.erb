@@ -11,6 +11,13 @@
     <p>response content response content response content....</p>
   </div>
   <div>
+  <div id="answer-form" style="display:none;">
+    <%= form_tag answers_path(:id => @question.id), remote: true do |f| %>
+      <%= label_tag "Your Answer" %>
+      <%= text_field_tag :content %>
+      <%= submit_tag "Submit" %>
+    <% end %>
+  </div>
     <ul class="ul_answers">
       <li>
         <p> @answer.content </p>
