@@ -6,7 +6,7 @@
 
 <%  @questions.each do |question| %>
   <div>
-    <h3><span><!-- Vote total Goes here --></span><%= link_to question.title, questions_path(question) %></h3>
+    <h3><span><!-- Vote total Goes here --></span><%= link_to question.title, questions_show_path(question.id) %></h3>
     <p><%= question.content %></p>
   </div>
 <% end %>
