@@ -5,7 +5,7 @@ module QuestionImporter
     10.times do
       Question.create(title: Faker::Lorem.sentence,
                       content: Faker::Lorem.sentence,
-                      :user_id => rand(1..10))
+                      :user_id => rand(1..10), score:0)
     end
   end
 end
@@ -28,6 +28,6 @@ module AnswerImporter
   end
 end
 
-AnswerImporter.import
 QuestionImporter.import
+AnswerImporter.import
 UserImporter.import
