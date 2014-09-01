@@ -24,7 +24,7 @@
       <% @question.answers.each do |answer| %>
         <li>
           <p><%= answer.content %></p>
-          <h6>User X</h6>
+          <h6><%= answer.user %></h6>
           <h6><%= answer.score %></h6>
           <div>
             <% answer.responses.each do |comment| %>
