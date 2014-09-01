@@ -10,7 +10,7 @@ class AnswersController < ActionController::Base
 
   def create
     question = Question.find(params[:id])
-    @answer = Answer.create(content: params[:content])
+    @answer = Answer.create(content: params[:content], score: 0)
     question.answers << @answer
   end
 
